@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">    
+
+    <link rel="stylesheet" href="./reset.css">
+
+    <style>
+        body {
+            font-family: "Vollkorn", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            background-color: rgba(68, 100, 229, 0.105);    
+        }
+
+        nav#top {
+            font-size: 32px;
+            font-weight: 700;
+            background-color: rgb(68, 100, 229);
+            height: 60px;
+            line-height: 60px;
+            color: white;
+            padding-left: 16px;
+        }
+
+        header, section {
+            margin: 0 20%;
+            background-color: white;
+            padding: 32px;
+        }
+
+        h1, h4, p, img, video {
+            margin: 16px 0;
+        }
+
+        h1:last-child, h4:last-child, p:last-child, img:last-child, video:last-child {
+            margin: 0 0;
+        }
+
+        .title {
+            color: darkslategray;    
+        }
+
+        a:visited {
+            color: teal;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #222a44
+        }
+
+        table thead tr th {
+            width: 150px;
+            background-color: #505e8d;
+            color: white;
+        }
+
+        table thead tr th, table tbody tr td {
+            text-align: center;
+        }
+
+
+        table thead tr th:first-child {
+            width: 20px;
+        }
+
+        #squares {
+            display: flex;
+            /* proučiti flex-direction */
+            justify-content: space-between; /* provjeriti ostale vrijednosti */
+            align-items: center;
+            height: 400px;
+            background-color: aliceblue;
+        }
+
+        .square {
+            width: 100px;
+            height: 100px;
+        }
+
+        .square:first-child {
+            background-color: tomato;
+        }
+        .square:nth-child(2) {
+            background-color: gold;
+        }
+        .square:last-child {
+            background-color: dodgerblue;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <nav id="top">
+        MyPage 🔶
+    </nav>
+
+    <header>
+        <h1 class="title">Welcome to WP</h1>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt at aut a eligendi! Nisi iste aspernatur consectetur! Reprehenderit ad hic quos aliquam dignissimos, minima odit molestias labore, velit, consequatur tempore laboriosam? Architecto, ipsam odio, quam numquam recusandae autem eaque rerum non dignissimos possimus veniam obcaecati magni, repellat inventore sequi? Minima!
+        </p>
+    </header>
+
+    <section>
+
+        <div id="squares">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Prezime</th>
+                    <th>Ime</th>
+                    <th>Uloga</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Tomljanović</td>
+                    <td>Zoran</td>
+                    <td>Nositelj</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Čorić</td>
+                    <td>Rebeka</td>
+                    <td>Predavač (WPiP)</td>                    
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Maltar</td>
+                    <td>Jurica</td>
+                    <td>Predavač (WP)</td>                     
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            Ovo je uvodno predavanje
+        </p>
+
+        <h4 class="title">My favourite dishes</h4>
+        <ol>
+            <li>Hamburger 🍔</li>
+            <li>Caesar salad 🥗</li>
+            <li>Soup 🍲</li>
+        </ol>
+
+        <p>
+            H<sub>2</sub>O
+        </p>
+
+        <p>
+            Kolokvij je <del>sutra</del> <ins>za <span>tjedan dana</span></ins>
+        </p>
+
+
+        <img style="display: inline-block" src="./photo.jpg" alt="A nice beach on sunset" height="320px">
+
+        <video style="display: inline-block" src="./norway.mp4" autoplay loop muted height="320px"></video>
+
+        <hr>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur.
+        </p>
+        
+        <p>
+            <a href="#top">Go to top</a> 
+            <a href="https://www.duckduckgo.com" target="_blank">DuckDuckGo</a>
+        </p>
+
+    </section>
+
+</body>
+</html>
