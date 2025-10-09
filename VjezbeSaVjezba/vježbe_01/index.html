@@ -16,10 +16,8 @@
     <link rel="stylesheet" href="reset.css" />
     <title>Document</title>
     <style>
-      a:hover,
-      a:active {
-        text-decoration-color: teal;
-        background-color: rgb(70, 135, 135);
+      ul li a:hover {
+        color: rgb(61, 99, 99);
       }
       a:link,
       a:visited {
@@ -27,7 +25,10 @@
         text-decoration: none;
       }
       a {
-        padding: 38px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 45px;
+        padding-right: 45px;
       }
       body,
       nav {
@@ -51,39 +52,95 @@
       img#chris {
         border-radius: 300px;
         margin-left: 200px;
-        margin-top: 20px;
+        margin-top: 10px;
         object-fit: cover;
       }
       nav {
         background-color: teal;
-        height: 100px;
+        height: 60px;
       }
       nav ul {
         display: flex;
         list-style: none;
         align-items: center;
+        padding: 0;
+        margin: 0;
       }
       nav li {
-        margin-top: 7px;
-        width: 150px;
+        width: 80px;
+        margin-left: 23px;
+        margin-top: 6px;
         font-size: 20px;
       }
       nav img {
-        padding-top: 10px;
-        padding-left: 20px;
-        height: 70px;
-        width: 90px;
+        padding-top: 5px;
+        margin-left: 11px;
+        height: 40px;
+        width: 70px;
         object-fit: contain;
       }
-      .rectangle {
+      .rectangle:first-child {
         position: fixed;
+        margin-top: 70px;
         top: -10px;
         left: -10px;
-        width: 200px;
+        width: 150px;
         display: flex;
         height: 4000px;
         list-style: none;
-        background-color: rgba(128, 128, 128, 0.438);
+        background-color: rgba(32, 119, 119, 0.116);
+      }
+      .rectangle:nth-child(2) {
+        position: fixed;
+        margin-top: 70px;
+        top: -10px;
+        left: 1770px;
+        width: 150px;
+        display: flex;
+        height: 4000px;
+        list-style: none;
+        background-color: rgba(32, 119, 119, 0.116);
+      }
+      .rectangle:last-child {
+        position: fixed;
+        height: 60px;
+        top: 900px;
+        width: 2000px;
+        left: 0px;
+        display: flex;
+        list-style: none;
+        background-color: rgb(0, 0, 0);
+      }
+      .square {
+        position: fixed;
+        top: -10px;
+        left: 140px;
+        width: 116px;
+        display: flex;
+        height: 70px;
+        list-style: none;
+        background-color: rgba(139, 179, 179, 0.616);
+      }
+      h1,
+      p {
+        margin-left: 150px;
+        margin-right: 150px;
+        padding-right: 30px;
+      }
+      h2 {
+        position: fixed;
+        top: 908px;
+        font-size: 22px;
+        color: rgba(185, 185, 185, 0.74);
+        right: 50px;
+      }
+      img.logo {
+        filter: invert(39%) sepia(88%) saturate(0%) hue-rotate(2deg)
+          brightness(70%) contrast(104%);
+        height: 40px;
+        right: 4px;
+        top: 905px;
+        position: fixed;
       }
     </style>
   </head>
@@ -91,9 +148,6 @@
     <nav>
       <ul>
         <li>
-          <div>
-            <div class="rectangle"></div>
-          </div>
           <img
             style="display: inline"
             src="./496-4968268_profile-icon-png-white-clipart.png"
@@ -102,10 +156,17 @@
         </li>
         <li><a href="./index.html">Profile</a></li>
         <li><a href="./projects.html">Projects</a></li>
-        <li><a href="./about.html">About</a></li>
+        <li><a href="./about.html" id="3">About</a></li>
+        <div id="squares">
+          <div class="square"></div>
+        </div>
+        <div>
+          <div class="rectangle"></div>
+          <div class="rectangle"></div>
+          <div class="rectangle"></div>
+        </div>
       </ul>
     </nav>
-
     <img
       id="chris"
       style="display: inline-block"
@@ -114,5 +175,43 @@
       height="200px"
       width="200px"
     />
+    <h1>Christoph Waltz</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nemo
+      adipisci ipsa magnam corporis quia quas, fugit autem labore numquam magni
+      maxime voluptatem officia delectus ut sequi laborum deserunt repellat
+      veniam, veritatis, quasi sint possimus dignissimos! Harum voluptatem
+      expedita eius, corrupti beatae eaque tempore modi dolorum velit saepe
+      dicta, explicabo, exercitationem sunt. Quo itaque, voluptas corporis
+      aliquid tempora est. Mollitia unde odit rem quasi necessitatibus veritatis
+      praesentium omnis nulla consequuntur non voluptatem, atque totam
+      exercitationem aliquid voluptate aliquam tempore tenetur reprehenderit
+      minima corporis aperiam! Dolor placeat accusantium voluptatibus et est
+      maxime harum soluta quo necessitatibus ex? Repellat cum quo inventore
+      quam, consequuntur voluptatibus? Suscipit, quibusdam quia neque eos omnis
+      obcaecati architecto doloremque soluta eveniet corrupti. Nam ea eveniet
+      blanditiis laboriosam, atque nostrum quam perspiciatis nemo magnam ad,
+      laborum temporibus et vero sunt facere, illum amet. Dignissimos atque
+      porro optio iure quam impedit reprehenderit perspiciatis quia fugit rerum
+      modi illum labore voluptate esse minus aut fugiat aspernatur at sapiente
+      laborum, tempora voluptatibus consequatur. Animi voluptas laudantium quo
+      maiores dolorem. Illum, nesciunt atque incidunt accusamus deserunt
+      consequatur dolore alias inventore recusandae consectetur voluptates ab.
+      Deleniti alias quos, doloremque pariatur est veniam voluptas iusto ad iure
+      expedita quaerat eum fuga corrupti placeat reprehenderit dolorem provident
+      quisquam rerum animi excepturi corporis voluptatibus! Hic, officiis
+      tempora nostrum eos exercitationem cum aliquam molestias nisi ratione
+      quisquam, consectetur rerum qui? Id at, cupiditate vero provident nemo
+      veniam quos a ad! Quis dolor dolore molestiae sint tempora natus
+      exercitationem aut, necessitatibus magni iste voluptate alias libero
+      minima, nihil sunt placeat eius dolorem officia quo obcaecati cupiditate
+      sit, soluta debitis. Aspernatur, optio ipsum consectetur excepturi
+      cupiditate rerum nulla delectus voluptatem non quasi magnam eum dolores
+      sapiente alias fugit omnis tempore, aut tempora ducimus ipsam sequi qui
+      mollitia quia maxime. Quod qui tempora vitae illo saepe autem velit
+      accusamus cum.
+    </p>
+    <h2>Jurica Maltar &copy; 2025</h2>
+    <img class="logo" src="logo.svg" alt="logo" />
   </body>
 </html>
